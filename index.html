@@ -1,16 +1,692 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>onlineagora-oamg</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 4rem auto; padding: 0 1.5rem; color: #1a1a1a; }
-    h1 { font-size: 1.5rem; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Protocolo Contato Certo: 90 dias para o WhatsApp da sua empresa receber só quem quer comprar. Comece com um diagnóstico gratuito de 30 minutos.">
+<title>Protocolo Contato Certo — Diagnóstico gratuito | OAMG</title>
+<!-- Pixel + GTM: eventos entram na fila na hora; os scripts de terceiros carregam depois da pintura -->
+<script>
+(function (w, d) {
+  var n = w.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+  if (!w._fbq) w._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+  w.fbq('init', '1970403806838540');
+  w.fbq('track', 'PageView');
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  var loaded = false;
+  function add(src) { var s = d.createElement('script'); s.async = true; s.src = src; d.head.appendChild(s); }
+  function load() {
+    if (loaded) return; loaded = true;
+    add('https://connect.facebook.net/en_US/fbevents.js');
+    add('https://www.googletagmanager.com/gtm.js?id=GTM-5ZL6P79X');
+  }
+  ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+    w.addEventListener(ev, load, { once: true, passive: true });
+  });
+  w.addEventListener('load', function () {
+    if (w.requestIdleCallback) w.requestIdleCallback(load, { timeout: 2500 });
+    else setTimeout(load, 1500);
+  });
+})(window, document);
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1970403806838540&ev=PageView&noscript=1"
+/></noscript>
+<link rel="preload" href="fonts/Fraunces-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/IBMPlexSans-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 400; font-display: swap; src:url(fonts/Fraunces-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;} @font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 500; font-display: swap; src:url(fonts/Fraunces-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;} @font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 600; font-display: swap; src:url(fonts/Fraunces-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;} @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 400; font-display: swap; src:url(fonts/IBMPlexMono-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;} @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: swap; src:url(fonts/IBMPlexMono-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;} @font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src:url(fonts/IBMPlexSans-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;} @font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src:url(fonts/IBMPlexSans-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;} @font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src:url(fonts/IBMPlexSans-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  :root{
+    --bg:#10160f;
+    --bg-raised:#161f14;
+    --bg-raised-2:#1b2519;
+    --fg:#e8ece1;
+    --fg-muted:#a9b6a2;
+    --fg-faint:#6f7d68;
+    --border:rgba(169,182,162,0.16);
+    --border-strong:rgba(169,182,162,0.3);
+    --accent:#4eae83;
+    --accent-strong:#7dcba6;
+    --on-accent:#0b2016;
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'IBM Plex Sans', -apple-system, system-ui, sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+  .prose{max-width:640px;}
+  h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:-0.01em;text-wrap:balance;margin:0;}
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--fg-muted);
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:16px;height:1px;background:var(--border-strong);}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:var(--font-mono);
+    font-size:13px;letter-spacing:0.04em;text-transform:uppercase;
+    padding:14px 22px;border-radius:3px;border:1px solid transparent;
+    text-decoration:none;cursor:pointer;transition:transform .15s ease, opacity .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--accent);color:var(--on-accent);}
+  .btn-primary:hover{opacity:0.92;}
+  .btn-ghost{background:transparent;color:var(--fg);border-color:var(--border-strong);}
+  .btn-ghost:hover{border-color:var(--accent);}
+  .trust-line{
+    font-family:var(--font-mono);font-size:12.5px;color:var(--fg-faint);
+    display:flex;align-items:center;gap:8px;margin-top:14px;
+  }
+  .trust-line svg{flex:none;}
+  /* header */
+  header{
+    position:sticky;top:0;z-index:40;
+    background:rgba(16,22,15,0.86);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;}
+  .logo{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:14px;letter-spacing:0.06em;}
+  .logo-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);}
+  .nav-links{display:flex;align-items:center;gap:28px;}
+  .nav-links a{font-family:var(--font-mono);font-size:12.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--fg-muted);text-decoration:none;}
+  .nav-links a:hover{color:var(--fg);}
+  .nav-links a.btn-primary{color:var(--on-accent);}
+  @media (max-width:820px){ .nav-links a:not(.btn){display:none;} }
+  /* hero */
+  .hero{padding:88px 0 64px;}
+  .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;}
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} .hero-photo{max-width:340px;margin:0 auto;} }
+  .hero h1{font-size:clamp(34px,4.6vw,58px);line-height:1.08;}
+  .hero p{color:var(--fg-muted);font-size:17px;margin-top:22px;max-width:52ch;}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;}
+  .hero-photo{border-radius:6px;overflow:hidden;border:1px solid var(--border);}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(0.92) contrast(1.03);}
+  section{padding:76px 0;border-top:1px solid var(--border);scroll-margin-top:76px;content-visibility:auto;contain-intrinsic-size:auto 720px;}
+  section.hero{content-visibility:visible;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-head h2{font-size:clamp(26px,3vw,36px);margin-top:14px;}
+  /* problema */
+  .problema-list{display:flex;flex-direction:column;}
+  .problema-item{
+    display:grid;grid-template-columns:80px 1fr;gap:28px;
+    padding:30px 0;border-top:1px solid var(--border);
+  }
+  .problema-item:last-child{border-bottom:1px solid var(--border);}
+  .problema-num{font-family:var(--font-mono);font-size:14px;color:var(--fg-faint);padding-top:4px;}
+  .problema-item h3{font-size:20px;font-weight:500;}
+  .problema-item p{color:var(--fg-muted);margin-top:8px;max-width:56ch;}
+  @media (max-width:640px){ .problema-item{grid-template-columns:1fr;gap:8px;} }
+  /* manifesto quote */
+  .manifesto{background:var(--bg-raised);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .manifesto blockquote{
+    font-family:var(--font-display);font-weight:500;font-style:italic;
+    font-size:clamp(20px,2.6vw,28px);line-height:1.5;margin:0;max-width:820px;color:var(--fg);
+  }
+  .manifesto p.attrib{margin-top:26px;color:var(--fg-muted);max-width:640px;font-size:15px;}
+  .manifesto .cite{font-family:var(--font-mono);font-size:12.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--fg-faint);margin-top:22px;display:block;}
+  /* o que resolve */
+  .resolve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);}
+  .resolve-card{background:var(--bg);padding:28px;}
+  .resolve-card h3{font-size:16.5px;font-weight:500;font-family:var(--font-body);}
+  .resolve-card p{color:var(--fg-muted);font-size:14.5px;margin-top:10px;}
+  @media (max-width:860px){ .resolve-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .resolve-grid{grid-template-columns:1fr;} }
+  /* principios */
+  .principio{padding:26px 0;border-top:1px solid var(--border);display:grid;grid-template-columns:64px 1fr;gap:24px;}
+  .principio:last-of-type{border-bottom:1px solid var(--border);}
+  .principio-mark{font-family:var(--font-display);font-style:italic;font-size:22px;color:var(--accent-strong);}
+  .principio h3{font-size:19px;font-weight:500;font-family:var(--font-body);}
+  .principio p{color:var(--fg-muted);margin-top:8px;max-width:58ch;}
+  @media (max-width:640px){ .principio{grid-template-columns:1fr;gap:6px;} }
+  /* mid CTA band */
+  .mid-cta{
+    background:var(--bg-raised-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+    padding:56px 0;
+  }
+  .mid-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+  .mid-cta p{font-family:var(--font-display);font-size:clamp(19px,2.2vw,24px);max-width:44ch;margin:0;}
+  /* segmentacao */
+  .seg-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:8px;}
+  .seg-col{background:var(--bg);padding:36px;}
+  .seg-col h3{font-family:var(--font-mono);font-size:12.5px;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:22px;}
+  .seg-col.yes h3{color:var(--accent-strong);}
+  .seg-col.no h3{color:var(--fg-faint);}
+  .seg-row{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--border);font-size:15px;}
+  .seg-row:first-of-type{border-top:none;}
+  .seg-mark{font-family:var(--font-mono);flex:none;padding-top:1px;}
+  .seg-col.yes .seg-mark{color:var(--accent-strong);}
+  .seg-col.no .seg-mark{color:var(--fg-faint);}
+  .seg-col.no p{color:var(--fg-muted);}
+  @media (max-width:760px){ .seg-grid{grid-template-columns:1fr;} }
+  /* como funciona */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;}
+  .step-num{font-family:var(--font-mono);font-size:13px;color:var(--accent-strong);}
+  .step h3{font-size:17px;font-weight:500;font-family:var(--font-body);margin-top:14px;}
+  .step p{color:var(--fg-muted);font-size:14.5px;margin-top:8px;}
+  @media (max-width:860px){ .steps{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .steps{grid-template-columns:1fr;} }
+  /* faq */
+  .faq-item{border-top:1px solid var(--border);}
+  .faq-item:last-child{border-bottom:1px solid var(--border);}
+  .faq-item summary{
+    list-style:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+    padding:24px 0;font-family:var(--font-body);font-size:17px;font-weight:500;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .plus{font-family:var(--font-mono);color:var(--fg-muted);font-size:20px;flex:none;transition:transform .2s ease;}
+  .faq-item[open] summary .plus{transform:rotate(45deg);color:var(--accent-strong);}
+  .faq-item .faq-a{color:var(--fg-muted);max-width:64ch;padding:0 0 26px;font-size:15px;}
+  /* diagnostico / form */
+  .diag{background:var(--bg-raised);}
+  .diag-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;}
+  @media (max-width:900px){ .diag-grid{grid-template-columns:1fr;} }
+  .diag-step{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--border);}
+  .diag-step:first-child{border-top:none;}
+  .diag-step .n{font-family:var(--font-mono);color:var(--accent-strong);font-size:13px;flex:none;padding-top:2px;}
+  .diag-step p{margin:0;color:var(--fg-muted);font-size:15px;}
+  form{display:flex;flex-direction:column;gap:14px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media (max-width:560px){ .form-row{grid-template-columns:1fr;} }
+  label{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--fg-faint);margin-bottom:6px;display:block;}
+  input,select{
+    width:100%;background:var(--bg);border:1px solid var(--border-strong);color:var(--fg);
+    padding:12px 14px;border-radius:3px;font-family:var(--font-body);font-size:15px;
+  }
+  input:focus,select:focus{outline:none;border-color:var(--accent);}
+  .field{display:flex;flex-direction:column;}
+  form .btn{margin-top:8px;justify-content:center;}
+  .form-note{font-family:var(--font-mono);font-size:12px;color:var(--fg-faint);margin-top:14px;}
+  .form-error{display:none;color:#e59a7b;font-size:13.5px;font-family:var(--font-mono);}
+  .success-state{display:none;padding:18px 0;}
+  .success-state h3{font-size:22px;margin-bottom:10px;}
+  .success-state p{color:var(--fg-muted);}
+  #diag-form.is-success .form-body{display:none;}
+  #diag-form.is-success .success-state{display:block;}
+  footer{padding:48px 0;border-top:1px solid var(--border);}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;}
+  footer p{color:var(--fg-muted);font-size:14px;margin:6px 0 0;}
+  .foot-meta{font-family:var(--font-mono);font-size:12px;color:var(--fg-faint);text-align:right;}
+  .tag{display:inline-block;font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--accent-strong);background:rgba(78,174,131,0.1);border:1px solid rgba(78,174,131,0.3);padding:4px 10px;border-radius:3px;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} .btn{transition:none;} }
+  /* ===== oferta (framework de valor) ===== */
+  .proof-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+  .proof-chip{font-family:var(--font-mono);font-size:12px;letter-spacing:0.03em;color:var(--fg-muted);border:1px solid var(--border-strong);border-radius:3px;padding:7px 12px;}
+  .proof-chip b{color:var(--accent-strong);font-weight:500;}
+  .offer-name{font-size:clamp(28px,3.6vw,44px);margin-top:14px;}
+  .offer-lead{color:var(--fg-muted);font-size:18px;margin-top:14px;max-width:56ch;}
+  .offer-block{margin-top:56px;}
+  .offer-block h3.block-title{font-family:var(--font-mono);font-size:12.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-strong);font-weight:500;margin-bottom:20px;}
+  .gargalos{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);}
+  .gargalo{background:var(--bg);padding:26px;}
+  .gargalo .n{font-family:var(--font-mono);font-size:13px;color:var(--accent-strong);}
+  .gargalo h4{font-family:var(--font-body);font-size:17px;font-weight:500;margin:12px 0 0;}
+  .gargalo p{color:var(--fg-muted);font-size:14.5px;margin:8px 0 0;}
+  @media (max-width:860px){ .gargalos{grid-template-columns:1fr;} }
+  .reason{margin-top:20px;font-family:var(--font-display);font-size:clamp(18px,2vw,22px);line-height:1.45;max-width:60ch;}
+  .eq-list{display:flex;flex-direction:column;}
+  .eq-row{display:grid;grid-template-columns:48px 220px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--border);align-items:baseline;}
+  .eq-row:last-child{border-bottom:1px solid var(--border);}
+  .eq-sign{font-family:var(--font-display);font-size:26px;color:var(--accent-strong);}
+  .eq-row h4{font-family:var(--font-body);font-size:17px;font-weight:500;margin:0;}
+  .eq-row p{color:var(--fg-muted);margin:0;font-size:15px;}
+  @media (max-width:760px){ .eq-row{grid-template-columns:36px 1fr;} .eq-row p{grid-column:2;} }
+  .stack-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:28px;}
+  @media (max-width:900px){ .stack-grid{grid-template-columns:1fr;} }
+  .stack-box{border:1px solid var(--border);background:var(--bg-raised);padding:28px;border-radius:4px;}
+  .stack-box h4{font-family:var(--font-mono);font-size:12.5px;letter-spacing:0.07em;text-transform:uppercase;color:var(--fg-muted);font-weight:500;margin:0 0 14px;}
+  .stack-box.bonus{border-color:rgba(78,174,131,0.4);background:rgba(78,174,131,0.06);}
+  .stack-item{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--border);font-size:15px;}
+  .stack-item:first-of-type{border-top:none;}
+  .stack-item .mk{color:var(--accent-strong);font-family:var(--font-mono);flex:none;}
+  .stack-note{color:var(--fg-faint);font-size:13.5px;font-family:var(--font-mono);margin-top:14px;}
+  .guarantee{margin-top:56px;border:1px solid var(--accent);border-radius:4px;padding:30px 32px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;background:rgba(78,174,131,0.07);}
+  .guarantee svg{flex:none;color:var(--accent-strong);}
+  .guarantee h3{font-size:22px;margin-bottom:8px;}
+  .guarantee p{margin:0;color:var(--fg-muted);max-width:62ch;}
+  .guarantee p + p{margin-top:10px;font-size:14.5px;color:var(--fg-faint);}
+  @media (max-width:560px){ .guarantee{grid-template-columns:1fr;} }
+  .mid-cta .small{font-family:var(--font-mono);font-size:12.5px;color:var(--fg-faint);margin-top:12px;display:block;max-width:60ch;}
+  details.more{margin-top:8px;}
+  details.more > summary{cursor:pointer;font-family:var(--font-mono);font-size:13px;letter-spacing:0.05em;text-transform:uppercase;color:var(--accent-strong);list-style:none;padding:10px 0;}
+  details.more > summary::-webkit-details-marker{display:none;}
+  details.more[open] > summary{margin-bottom:22px;}
+  .step-day{font-family:var(--font-mono);font-size:12px;color:var(--fg-faint);margin-top:4px;display:block;}
+</style>
 </head>
 <body>
-  <h1>onlineagora-oamg</h1>
-  <p>Repositório para páginas de desenvolvimento. Em construção.</p>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZL6P79X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header>
+  <div class="nav wrap">
+    <div class="logo"><span class="logo-dot"></span>OAMG</div>
+    <div class="nav-links">
+      <a href="#problema">O Problema</a>
+      <a href="#oferta">A Oferta</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#diagnostico" class="btn btn-primary">Diagnóstico grátis</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" style="border-top:none;padding-top:56px;">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">OAMG · Diagnóstico gratuito de 30 minutos</div>
+        <h1 style="margin-top:18px;">Seu WhatsApp recebendo só quem quer comprar.<br>Em 90 dias.</h1>
+        <p>O <strong style="color:var(--fg);font-weight:500;">Protocolo Contato Certo</strong> junta anúncio, perfil e atendimento num só caminho, com um filtro que deixa passar só quem tem perfil de comprar. Você começa com um diagnóstico gratuito e sai sabendo onde a sua venda está travando.</p>
+        <div class="hero-cta">
+          <a href="#diagnostico" class="btn btn-primary">Quero meu diagnóstico gratuito</a>
+          <a href="#oferta" class="btn btn-ghost">Ver como funciona</a>
+        </div>
+        <div class="proof-row">
+          <span class="proof-chip"><b>Dia 7</b> · diagnóstico pronto e perfil arrumado</span>
+          <span class="proof-chip"><b>Dia 21</b> · anúncio no ar, com filtro</span>
+          <span class="proof-chip"><b>Toda sexta</b> · relatório do que entrou e custou</span>
+        </div>
+        <div class="trust-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Você fala direto comigo — sem intermediário, sem repasse de atendente.
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="hamilton-720.webp" srcset="hamilton-480.webp 480w, hamilton-720.webp 720w" sizes="(max-width:900px) 340px, 460px" width="720" height="940" alt="Hamilton Viana, fundador da OAMG" decoding="async">
+      </div>
+    </div>
+  </section>
+  <section id="problema">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Caso 001 · Diagnóstico</div>
+        <h2>Onde o dinheiro está escapando</h2>
+        <p style="color:var(--fg-muted);margin-top:14px;">Cinco jeitos de perder venda sem perceber. Antes de falar de anúncio ou de automação, olhamos para isto.</p>
+      </div>
+      <div class="problema-list">
+        <div class="problema-item">
+          <div class="problema-num">01</div>
+          <div><h3>Falta de clientes novos com regularidade</h3><p>O negócio vive de indicação, sazonalidade ou sorte — e não sabe de onde virá a próxima venda.</p></div>
+        </div>
+        <div class="problema-item">
+          <div class="problema-num">02</div>
+          <div><h3>Movimento sem venda</h3><p>Há seguidores, visitas e mensagens. Mas pouca gente avança para orçamento, reunião ou compra.</p></div>
+        </div>
+        <div class="problema-item">
+          <div class="problema-num">03</div>
+          <div><h3>Oferta pouco clara</h3><p>O cliente não entende rápido por que deveria comprar, qual transformação vai receber, por que escolher você.</p></div>
+        </div>
+        <div class="problema-item">
+          <div class="problema-num">04</div>
+          <div><h3>Oportunidades desperdiçadas</h3><p>Gente interessada esfria porque ninguém responde a tempo, acompanha, lembra ou retoma a conversa.</p></div>
+        </div>
+        <div class="problema-item">
+          <div class="problema-num">05</div>
+          <div><h3>Crescimento sem sistema</h3><p>Cada ação é isolada: posta, anuncia, promove ou lança algo sem um processo que conecte atração, venda e acompanhamento.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="oferta">
+    <div class="wrap">
+      <div class="section-head" style="max-width:760px;margin-bottom:0;">
+        <div class="eyebrow">A oferta</div>
+        <h2 class="offer-name">Protocolo Contato Certo</h2>
+        <p class="offer-lead">90 dias para o WhatsApp da sua empresa receber só quem quer comprar.</p>
+      </div>
+      <div class="offer-block">
+        <h3 class="block-title">Por que funciona: 3 pontos que costumam quebrar</h3>
+        <div class="gargalos">
+          <div class="gargalo"><div class="n">01</div><h4>Perfil e oferta</h4><p>Quem chega precisa entender em segundos o que você vende e por que escolher você.</p></div>
+          <div class="gargalo"><div class="n">02</div><h4>Anúncio com filtro</h4><p>Perguntas antes da conversa separam quem tem perfil de comprar de quem está só curioso.</p></div>
+          <div class="gargalo"><div class="n">03</div><h4>Atendimento</h4><p>Contato que esfria é dinheiro perdido. Resposta rápida e acompanhamento organizado.</p></div>
+        </div>
+        <p class="reason">Corrigir só um deles não basta. É por isso que o anúncio sozinho costuma trazer contato ruim.</p>
+      </div>
+      <div class="offer-block">
+        <h3 class="block-title">O que muda para você</h3>
+        <div class="eq-list">
+          <div class="eq-row"><span class="eq-sign">+</span><h4>Resultado mais claro</h4><p>Um destino: contatos com perfil de compra, com a meta combinada por escrito no início. Não "mais alcance".</p></div>
+          <div class="eq-row"><span class="eq-sign">+</span><h4>Mais chance de dar certo</h4><p>Método em etapas, relatório toda semana e dados reais para ajustar o rumo. Não é milagre: é processo.</p></div>
+          <div class="eq-row"><span class="eq-sign">−</span><h4>Menos tempo de espera</h4><p>A primeira vitória vem em 7 dias: diagnóstico pronto e perfil arrumado. O anúncio vai ao ar até o dia 21.</p></div>
+          <div class="eq-row"><span class="eq-sign">−</span><h4>Menos esforço seu</h4><p>Roteiros prontos, posts feitos por nós, informe diário e um grupo no WhatsApp. Você aprova e atende.</p></div>
+        </div>
+      </div>
+      <div class="offer-block">
+        <h3 class="block-title">Tudo que vem junto</h3>
+        <div class="stack-grid">
+          <div class="stack-box">
+            <h4>Incluso na mensalidade</h4>
+            <div class="stack-item"><span class="mk">✓</span><span>Anúncios no Instagram e no Facebook, com filtro de quem chega</span></div>
+            <div class="stack-item"><span class="mk">✓</span><span>Relatório semanal: quanto entrou, quanto custou e quem valeu a pena</span></div>
+            <div class="stack-item"><span class="mk">✓</span><span>Informe diário curto no WhatsApp</span></div>
+            <div class="stack-item"><span class="mk">✓</span><span>Posts e carrosséis para o perfil voltar a ter vida</span></div>
+            <div class="stack-item"><span class="mk">✓</span><span>Roteiro pronto para vídeos, para ninguém precisar inventar o que falar</span></div>
+            <div class="stack-item"><span class="mk">✓</span><span>Grupo no WhatsApp com todos os sócios, sem "telefone sem fio"</span></div>
+            <p class="stack-note">Há três formatos, do enxuto ao completo. O diagnóstico mostra qual cabe no seu caso.</p>
+          </div>
+          <div class="stack-box bonus">
+            <h4>Bônus</h4>
+            <div class="stack-item"><span class="mk">+</span><span><strong style="font-weight:500;">Auditoria do Instagram e do Google Meu Negócio</strong>, com nota e plano de correção</span></div>
+            <div class="stack-item"><span class="mk">+</span><span><strong style="font-weight:500;">Respostas prontas para o WhatsApp</strong>: primeira resposta, perguntas de filtro e retomada</span></div>
+            <div class="stack-item"><span class="mk">+</span><span><strong style="font-weight:500;">Ajustes no Google Meu Negócio</strong> e botão de WhatsApp no site</span></div>
+            <p class="stack-note">Bônus nos formatos Recomendado e Completo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="guarantee">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 2.9 8.3 7 10 4.1-1.7 7-5.5 7-10V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg>
+        <div>
+          <h3>Garantia do diagnóstico</h3>
+          <p>Se em 30 minutos eu não apontar pelo menos um lugar concreto onde a sua venda está travando, você ganha mais 30 minutos comigo, sem custo.</p>
+          <p>Não prometo dobrar suas vendas. Prometo que você vai saber, toda semana, quanto entrou, quanto custou e quem valeu a pena.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="manifesto">
+    <div class="wrap">
+      <div class="eyebrow">O que acreditamos</div>
+      <blockquote style="margin-top:18px;">"Marketing só faz sentido quando melhora o negócio. Não basta gerar atenção, clique ou mensagem — é preciso transformar interesse em conversa, conversa em oportunidade, oportunidade em receita."</blockquote>
+      <p class="attrib">Por isso começamos pelo diagnóstico: a oferta, o cliente, o processo de venda, os pontos onde as oportunidades estão sendo perdidas. Depois conectamos comunicação, aquisição, acompanhamento e automação numa estrutura simples, mensurável e capaz de evoluir.</p>
+      <span class="cite">— Manifesto OAMG</span>
+    </div>
+  </section>
+  <section id="o-que-fazemos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Além do Protocolo</div>
+        <h2>O que mais você pode resolver com a OAMG</h2>
+        <p style="color:var(--fg-muted);margin-top:14px;">O nome técnico do serviço fica em segundo plano. O que importa é o resultado que você precisa.</p>
+      </div>
+      <details class="more">
+      <summary>Ver tudo que a OAMG também resolve +</summary>
+      <div class="resolve-grid">
+        <div class="resolve-card"><h3>Gerar novas oportunidades de venda</h3><p>Estrutura contínua para colocar sua empresa diante das pessoas certas e levá-las a conversar, pedir orçamento, agendar ou comprar.</p></div>
+        <div class="resolve-card"><h3>Transformar mais interesse em venda</h3><p>Revisão da mensagem, oferta, página e das etapas entre o primeiro contato e o fechamento.</p></div>
+        <div class="resolve-card"><h3>Organizar o processo de aquisição</h3><p>Mapeamento do caminho do cliente e do que precisa acontecer em cada etapa, para reduzir improviso.</p></div>
+        <div class="resolve-card"><h3>Recuperar clientes e contatos que esfriaram</h3><p>Follow-up e reativação de quem já custou tempo ou dinheiro para ser conquistado.</p></div>
+        <div class="resolve-card"><h3>Preparar campanhas de lançamento</h3><p>Estratégia, captação, comunicação e venda para webinars, workshops, mentorias e ofertas especiais.</p></div>
+        <div class="resolve-card"><h3>Criar uma presença digital que venda</h3><p>Páginas, mensagens e pontos de contato que conduzem a uma ação comercial — não só a uma visita.</p></div>
+        <div class="resolve-card"><h3>Automatizar sem perder o toque humano</h3><p>Respostas, distribuição, lembretes e acompanhamento organizados para acelerar o atendimento sem virar robô.</p></div>
+        <div class="resolve-card"><h3>Implantar acompanhamento de desempenho</h3><p>Indicadores simples: quanto foi investido, quantas oportunidades surgiram, quanto custaram, quantas viraram venda.</p></div>
+        <div class="resolve-card"><h3>Apoiar decisões de crescimento</h3><p>Leitura de oferta, público, canal e capacidade operacional antes de escalar uma operação que ainda não converte.</p></div>
+      </div>
+      </details>
+    </div>
+  </section>
+  <section id="como-pensamos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Antes de qualquer ferramenta</div>
+        <h2>O raciocínio que aplicamos primeiro</h2>
+      </div>
+      <div>
+        <div class="principio">
+          <div class="principio-mark">§1</div>
+          <div><h3>O anúncio não corrige uma oferta ruim.</h3><p>Ele só mostra, mais rápido, que a oferta não convence.</p></div>
+        </div>
+        <div class="principio">
+          <div class="principio-mark">§2</div>
+          <div><h3>Mais contatos não é o problema — é o processo para trabalhar os contatos que você já tem.</h3><p>Antes de investir em atrair mais gente, vale entender por que quem já chegou não avançou.</p></div>
+        </div>
+        <div class="principio">
+          <div class="principio-mark">§3</div>
+          <div><h3>Antes de aumentar investimento, descubra onde a conversão está quebrando.</h3><p>Dobrar o orçamento numa operação que converte mal não é escalar — é ampliar o desperdício.</p></div>
+        </div>
+        <div class="principio">
+          <div class="principio-mark">§4</div>
+          <div><h3>Follow-up não é insistência quando existe interesse real.</h3><p>É parte do processo de venda — e a maior fonte de receita esquecida na maioria dos negócios.</p></div>
+        </div>
+        <div class="principio">
+          <div class="principio-mark">§5</div>
+          <div><h3>Automatizar uma etapa ruim não melhora o processo.</h3><p>Só faz o erro acontecer mais rápido — automação serve para evitar perda, não para disfarçar um problema de base.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mid-cta">
+    <div class="wrap mid-cta-inner">
+      <div><p>Novembro e dezembro têm anúncio mais caro (Black Friday e Natal) e janeiro é o mês mais barato. Começar agora deixa perfil e filtro prontos para as duas janelas.</p>
+        <span class="small">Eu mesmo toco cada projeto, então abro poucas vagas novas por mês.</span></div>
+      <a href="#diagnostico" class="btn btn-primary">Quero meu diagnóstico gratuito →</a>
+    </div>
+  </section>
+  <section id="pra-quem" style="border-top:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Pra quem isso faz sentido</div>
+        <h2>Funciona melhor para</h2>
+      </div>
+      <div class="seg-grid">
+        <div class="seg-col yes">
+          <h3>Faz sentido se você é</h3>
+          <div class="seg-row"><span class="seg-mark">✓</span><p>Um negócio local que precisa de fluxo constante de clientes, orçamentos ou reservas.</p></div>
+          <div class="seg-row"><span class="seg-mark">✓</span><p>Um prestador de serviço que depende demais de indicação e quer previsibilidade.</p></div>
+          <div class="seg-row"><span class="seg-mark">✓</span><p>Um especialista, mentor ou expert que precisa transformar conhecimento em oferta.</p></div>
+          <div class="seg-row"><span class="seg-mark">✓</span><p>Uma empresa que já investe em divulgação, mas não sabe onde o processo está falhando.</p></div>
+          <div class="seg-row"><span class="seg-mark">✓</span><p>Uma operação pequena, onde o dono ainda acumula marketing, vendas e atendimento.</p></div>
+        </div>
+        <div class="seg-col no">
+          <h3>Não é pra você se busca</h3>
+          <div class="seg-row"><span class="seg-mark">×</span><p>Fórmula secreta, promessa fácil ou crescimento garantido.</p></div>
+          <div class="seg-row"><span class="seg-mark">×</span><p>Só um pacote de posts, anúncios ou ferramentas — sem entender o negócio por trás.</p></div>
+          <div class="seg-row"><span class="seg-mark">×</span><p>Medir sucesso por clique, alcance ou número de contatos, sem olhar pra venda.</p></div>
+          <div class="seg-row"><span class="seg-mark">×</span><p>Aparecer mais, sem ainda ter algo real e claro para vender.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Como funciona</div>
+        <h2>Do diagnóstico à venda em 90 dias</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="step-num">01</div><h3>Diagnóstico e perfil</h3><span class="step-day">Dias 1 a 7</span><p>Mapeamos onde a venda trava (procura, mensagem, oferta, atendimento), recuperamos os acessos e arrumamos o perfil e o Google Meu Negócio.</p></div>
+        <div class="step"><div class="step-num">02</div><h3>Anúncio com filtro no ar</h3><span class="step-day">Dias 8 a 21</span><p>Escolhemos o público e colocamos o anúncio no ar com as perguntas que separam quem tem perfil de quem está só curioso.</p></div>
+        <div class="step"><div class="step-num">03</div><h3>Primeiro relatório</h3><span class="step-day">Dia 30</span><p>Quanto custou gerar um contato bom, quantos viraram conversa e o que ajustar. Dali em diante, relatório toda sexta.</p></div>
+        <div class="step"><div class="step-num">04</div><h3>Ajuste com dado real</h3><span class="step-day">Dias 31 a 90</span><p>Cortamos o que não funciona e reforçamos o que traz contato certo, sempre com base em resultado, não em palpite.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="duvidas">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Antes de marcar</div>
+        <h2>Dúvidas que costumam aparecer</h2>
+      </div>
+      <div style="max-width:760px;">
+        <details class="faq-item" open>
+          <summary>O diagnóstico tem custo?<span class="plus">+</span></summary>
+          <div class="faq-a">Não. Os 30 minutos são o diagnóstico em si — o compromisso é te dar clareza sobre onde a venda está travando, com ou sem trabalhar comigo depois.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Vocês fazem consultoria ou tocam a execução?<span class="plus">+</span></summary>
+          <div class="faq-a">As duas coisas, dependendo do gargalo. O diagnóstico aponta se o problema é estratégia, execução, ou as duas — e a partir disso definimos junto o que faz sentido eu tocar e o que fica com o seu time.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quanto custa depois do diagnóstico?<span class="plus">+</span></summary>
+          <div class="faq-a">Há três formatos de mensalidade, do enxuto ao completo, com contrato de 6 meses. O valor exato depende do que o seu caso pede e eu só passo depois do diagnóstico, nunca antes. A verba dos anúncios é separada: você paga direto à Meta, no seu cartão.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Tem garantia?<span class="plus">+</span></summary>
+          <div class="faq-a">No diagnóstico, sim: se eu não apontar pelo menos um lugar concreto onde sua venda está travando, você ganha mais 30 minutos comigo. Na execução, a meta de contatos qualificados é combinada por escrito antes de assinar, e é contra ela que você me cobra toda semana no relatório.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Funciona para o meu tipo de negócio?<span class="plus">+</span></summary>
+          <div class="faq-a">Funciona melhor para negócio local, prestador de serviço, especialista ou mentor que já tem algo real para vender e precisa de processo — não para quem busca fórmula pronta ou só quer "aparecer mais". Veja os critérios completos <a href="#pra-quem" style="color:var(--accent-strong);text-decoration:underline;">acima</a>.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Preciso preparar algo antes de marcar?<span class="plus">+</span></summary>
+          <div class="faq-a">Nada especial. Só clareza sobre o que já tentou, o que funcionou e o que travou. E que quem decide esteja na conversa. O resto a gente descobre na própria conversa.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+  <section id="diagnostico" class="diag">
+    <div class="wrap">
+      <div class="diag-grid">
+        <div>
+          <div class="eyebrow">Próximo passo</div>
+          <h2 style="font-size:clamp(26px,3vw,34px);margin-top:14px;">Agende seu diagnóstico gratuito</h2>
+          <p style="color:var(--fg-muted);margin-top:14px;">30 minutos para entender onde sua empresa está perdendo venda e o que resolver primeiro. Sem custo, sem fórmula pronta, sem promessa fácil.</p>
+          <div style="margin-top:28px;">
+            <div class="diag-step"><div class="n">01</div><p>Você conta o cenário atual: o que já tentou, o que funcionou, o que travou.</p></div>
+            <div class="diag-step"><div class="n">02</div><p>Eu aponto, na hora, onde o processo comercial está deixando venda na mesa.</p></div>
+            <div class="diag-step"><div class="n">03</div><p>Você sai com clareza sobre o próximo passo — com ou sem trabalhar comigo.</p></div>
+            <div class="diag-step"><div class="n">+</div><p>Peço só uma coisa: que quem decide esteja na conversa. Se eu não apontar ao menos um ponto concreto, você ganha mais 30 minutos.</p></div>
+          </div>
+        </div>
+        <div>
+          <form id="diag-form" novalidate>
+            <div class="form-body">
+              <div class="form-row">
+                <div class="field"><label for="f-nome">Nome</label><input id="f-nome" type="text" name="nome" autocomplete="name" required></div>
+                <div class="field"><label for="f-email">E-mail</label><input id="f-email" type="email" name="email" autocomplete="email" required></div>
+              </div>
+              <div class="form-row">
+                <div class="field"><label for="f-empresa">Nome da empresa</label><input id="f-empresa" type="text" name="empresa" required></div>
+                <div class="field">
+                  <label for="f-funcionarios">Nº de funcionários</label>
+                  <select id="f-funcionarios" name="funcionarios" required>
+                    <option value="">Selecione</option>
+                    <option>Só eu</option>
+                    <option>2–5</option>
+                    <option>6–15</option>
+                    <option>16–50</option>
+                    <option>Mais de 50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field"><label for="f-nicho">Nicho de atuação</label><input id="f-nicho" type="text" name="nicho" required></div>
+              <div class="field">
+                <label for="f-investimento">Quanto você investe (ou toparia investir) em anúncios por mês?</label>
+                <select id="f-investimento" name="investimento" required>
+                  <option value="">Selecione</option>
+                  <option value="nao_investe">Não invisto em anúncios</option>
+                  <option value="ate_1000">Invisto, ou toparia investir, até R$ 1.000 por mês</option>
+                  <option value="1000_2000">Invisto, ou toparia investir, de R$ 1.000 a R$ 2.000 por mês</option>
+                  <option value="2000_3000">Invisto, ou toparia investir, de R$ 2.000 a R$ 3.000 por mês</option>
+                  <option value="acima_3000">Invisto, ou toparia investir, acima de R$ 3.000 por mês</option>
+                </select>
+              </div>
+              <p id="diag-error" class="form-error"></p>
+              <button id="diag-submit" type="submit" class="btn btn-primary">Quero meu diagnóstico gratuito →</button>
+              <p class="form-note">Seus dados vão direto para Hamilton — sem lista, sem spam.</p>
+            </div>
+            <div class="success-state">
+              <h3 id="success-name">Obrigado.</h3>
+              <p>Recebi seus dados — em breve te chamo pra combinar o horário do diagnóstico.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="logo"><span class="logo-dot"></span>OAMG</div>
+      <p>Estratégia, comunicação e automação a serviço da venda.</p>
+    </div>
+    <div class="foot-meta">
+      OnlineAgora Mentoria &amp; Gestão<br>
+      © 2026 · hmviana@gmail.com
+    </div>
+  </div>
+</footer>
+<script>
+(function () {
+  var form = document.getElementById('diag-form');
+  var errorEl = document.getElementById('diag-error');
+  var submitBtn = document.getElementById('diag-submit');
+  var WEBHOOK_URL = 'https://teste.hamiltonviana.com.br/webhook/oamg-diagnostico-lead';
+  // Captura utm_* da URL na primeira visita e guarda no localStorage, para
+  // sobreviver a navegação interna (âncoras) até o envio do formulário.
+  function captureOrigin() {
+    var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    var params = new URLSearchParams(window.location.search);
+    var found = {};
+    var hasNew = false;
+    UTM_KEYS.forEach(function (key) {
+      var v = params.get(key);
+      if (v) { found[key] = v; hasNew = true; }
+    });
+    if (hasNew) {
+      found.landing_url = window.location.href;
+      if (document.referrer) found.referrer = document.referrer;
+      try { localStorage.setItem('oamg_origin', JSON.stringify(found)); } catch (e) {}
+      return found;
+    }
+    try {
+      var stored = localStorage.getItem('oamg_origin');
+      if (stored) return JSON.parse(stored);
+    } catch (e) {}
+    // Sem UTM e sem visita anterior registrada: ainda guarda o referrer da
+    // sessão atual (ex.: veio direto do Instagram sem link com utm_source).
+    return document.referrer ? { referrer: document.referrer } : {};
+  }
+  var origin = captureOrigin();
+  form.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    errorEl.style.display = 'none';
+    var data = {
+      nome: form.nome.value.trim(),
+      email: form.email.value.trim(),
+      empresa: form.empresa.value.trim(),
+      funcionarios: form.funcionarios.value,
+      nicho: form.nicho.value.trim(),
+      investimento: form.investimento.value,
+      investimento_label: form.investimento.options[form.investimento.selectedIndex].text
+    };
+    for (var key in origin) { if (origin.hasOwnProperty(key)) data[key] = origin[key]; }
+    if (!data.nome || !data.email || !data.empresa || !data.funcionarios || !data.nicho || !data.investimento) {
+      errorEl.textContent = 'Preencha todos os campos para continuar.';
+      errorEl.style.display = 'block';
+      return;
+    }
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando…';
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error('bad response');
+        document.getElementById('success-name').textContent = 'Obrigado, ' + data.nome.split(' ')[0] + '.';
+        form.classList.add('is-success');
+        if (window.fbq) { fbq('track', 'Lead'); }
+        if (window.dataLayer) { window.dataLayer.push({ event: 'diagnostico_lead_enviado', empresa: data.empresa, nicho: data.nicho }); }
+      })
+      .catch(function () {
+        errorEl.textContent = 'Não conseguimos enviar agora. Tente novamente em instantes.';
+        errorEl.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Quero meu diagnóstico gratuito →';
+      });
+  });
+})();
+</script>
 </body>
 </html>
